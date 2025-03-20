@@ -37,3 +37,8 @@ struct RecipeCard: View {
     }
 }
 
+struct RecipeCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        RecipeCard(recipe: Recipe(name: "Mardi Gras Shrimp Étouffée", imageName: "shrimp", servings: 4, likes: 7, minutes: 90))
+    }
+}
