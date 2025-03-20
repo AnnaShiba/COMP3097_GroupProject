@@ -1,1 +1,0 @@
-I was able to take last terms Android code and change it to SwiftUI code.
