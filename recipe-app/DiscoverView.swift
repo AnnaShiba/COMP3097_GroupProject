@@ -49,7 +49,8 @@ struct DiscoverView: View {
     }
 }
 
-
-#Preview {
-    DiscoverView()
+struct DiscoverView_Previews: PreviewProvider {
+    static var previews: some View {
+        DiscoverView()
+    }
 }
