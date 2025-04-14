@@ -36,10 +36,10 @@ struct ContentView: View {
                 }
                 .tag(2)
             
-            SettingsView()
+            ProfileView(userId: 0)
                 .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    Text("Settings")
+                    Image(systemName: "person.fill")
+                    Text("Profile")
                 }
                 .tag(3)
         }

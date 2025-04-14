@@ -22,6 +22,9 @@
 		4AB39F772D8B7E370010E748 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB39F762D8B7E370010E748 /* RecipeData.swift */; };
 		4AB39F792D8B7E630010E748 /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB39F782D8B7E630010E748 /* RecipeCardView.swift */; };
 		4AB39F7D2D8B867F0010E748 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB39F7C2D8B867F0010E748 /* AboutView.swift */; };
+		B24A84BA2DAD777C00C07648 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A84B92DAD777C00C07648 /* DatabaseHelper.swift */; };
+		B24A84C22DAD78C400C07648 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A84C12DAD78C400C07648 /* ProfileView.swift */; };
+		B24A84C42DAD78FD00C07648 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A84C32DAD78FD00C07648 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		4AB39F762D8B7E370010E748 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		4AB39F782D8B7E630010E748 /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 		4AB39F7C2D8B867F0010E748 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B24A84B92DAD777C00C07648 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		B24A84C12DAD78C400C07648 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B24A84C32DAD78FD00C07648 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				4AB39F782D8B7E630010E748 /* RecipeCardView.swift */,
 				4AB39F7C2D8B867F0010E748 /* AboutView.swift */,
 				4A2859E02DAD53EF00370A66 /* RecipeDetailView.swift */,
+				B24A84B92DAD777C00C07648 /* DatabaseHelper.swift */,
+				B24A84C32DAD78FD00C07648 /* UserModel.swift */,
+				B24A84C12DAD78C400C07648 /* ProfileView.swift */,
 			);
 			path = "recipe-app";
 			sourceTree = "<group>";
@@ -178,8 +187,11 @@
 				4AB39F7D2D8B867F0010E748 /* AboutView.swift in Sources */,
 				4AB39F5A2D8B7CA90010E748 /* recipe_appApp.swift in Sources */,
 				4AB39F6D2D8B7CFA0010E748 /* HomeView.swift in Sources */,
+				B24A84C22DAD78C400C07648 /* ProfileView.swift in Sources */,
 				4AB39F712D8B7D170010E748 /* FavoritesView.swift in Sources */,
 				4AB39F752D8B7E240010E748 /* Recipe.swift in Sources */,
+				B24A84BA2DAD777C00C07648 /* DatabaseHelper.swift in Sources */,
+				B24A84C42DAD78FD00C07648 /* UserModel.swift in Sources */,
 				4AB39F772D8B7E370010E748 /* RecipeData.swift in Sources */,
 				4AB39F662D8B7CAA0010E748 /* recipe_app.xcdatamodeld in Sources */,
 				4AB39F6F2D8B7D050010E748 /* DiscoverView.swift in Sources */,
