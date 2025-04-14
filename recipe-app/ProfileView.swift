@@ -89,7 +89,7 @@ struct ProfileView: View {
                                 .font(.headline)
                             Spacer()
                             Button("Edit") {}
-                                .foregroundColor(.green)
+                                .foregroundColor(.teal)
                         }
                         
                         WrapView(items: allergies){ item in

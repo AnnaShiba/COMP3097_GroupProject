@@ -58,7 +58,7 @@ struct HomeView: View {
                             NavigationLink(destination: DiscoverView()) {
                                 Text("See All")
                                     .font(.subheadline)
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.teal)
                             }
                         }
                         
@@ -109,7 +109,7 @@ struct HomeView: View {
                             }
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.green.opacity(0.1))
+                            .background(Color.teal.opacity(0.1))
                             .foregroundColor(.green)
                             .cornerRadius(10)
                         }
@@ -243,7 +243,7 @@ struct QuickActionButton: View {
             }
             .padding()
             .frame(maxWidth: .infinity)
-            .background(Color.green.opacity(0.1))
+            .background(Color.teal.opacity(0.1))
             .foregroundColor(.green)
             .cornerRadius(10)
         }

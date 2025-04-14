@@ -99,7 +99,7 @@ struct RecipeDetailView: View {
                                         .font(.subheadline)
                                         .foregroundColor(.white)
                                         .frame(width: 24, height: 24)
-                                        .background(Circle().fill(Color.green))
+                                        .background(Circle().fill(Color.teal))
                                     
                                     Text(instruction)
                                         .padding(.leading, 8)
