@@ -46,51 +46,6 @@ struct FavoritesView: View {
     }
 }
 
-struct RecipeDetailView: View {
-    let recipe: Recipe
-    
-    var body: some View {
-        VStack {
-            Image(recipe.imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(height: 200)
-                .cornerRadius(15)
-                .padding()
-            
-            Text(recipe.name)
-                .font(.largeTitle)
-                .bold()
-                .padding(.bottom, 5)
-            
-            Text("⏳ \(recipe.minutes) min • 🍽 \(recipe.servings) servings")
-                .font(.subheadline)
-                .foregroundColor(.gray)
-                .padding(.bottom, 10)
-            
-            Text("Ingredients:")
-                .font(.headline)
-                .padding(.top)
-            
-            ForEach(recipe.ingredients, id: \..self) { ingredient in
-                Text("- " + ingredient)
-            }
-            
-            Text("Instructions:")
-                .font(.headline)
-                .padding(.top)
-            
-            ForEach(recipe.instructions, id: \..self) { step in
-                Text("• " + step)
-                    .padding(.vertical, 2)
-            }
-            
-            Spacer()
-        }
-        .padding()
-        .navigationTitle("Recipe Details")
-    }
-}
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
