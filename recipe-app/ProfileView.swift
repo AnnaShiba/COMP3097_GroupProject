@@ -44,7 +44,9 @@ struct ProfileView: View {
                             ProfileStat(title: "Activity Level", value: "High")
                         }
                         .padding(.horizontal)
+                        
                         Divider()
+                        
                         Button(action: {}) {
                             Text("Edit Profile")
                                 .frame(maxWidth: .infinity)
@@ -56,8 +58,6 @@ struct ProfileView: View {
                         .padding(.horizontal)
                     }
                     .padding()
-                    .cornerRadius(25)
-                    .shadow(radius: 5)
                     
                     // Dietary Pref
                     VStack(alignment: .leading, spacing: 12) {
@@ -78,6 +78,7 @@ struct ProfileView: View {
                         }
                     }
                     .padding()
+                    .background(Color.white)
                     .cornerRadius(25)
                     .shadow(radius: 5)
                     
@@ -101,6 +102,7 @@ struct ProfileView: View {
                         }
                     }
                     .padding()
+                    .background(Color.white)
                     .cornerRadius(25)
                     .shadow(radius: 5)
                 }
