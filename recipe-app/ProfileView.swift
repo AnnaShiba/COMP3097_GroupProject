@@ -85,7 +85,7 @@ struct ProfileView: View {
                     // Allergies
                     VStack(alignment: .leading, spacing: 12) {
                         HStack{
-                            Text("Dietary Preferences")
+                            Text("Allergies")
                                 .font(.headline)
                             Spacer()
                             Button("Edit") {}
