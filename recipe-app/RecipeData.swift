@@ -81,7 +81,7 @@ class RecipeDataManager: ObservableObject {
         ),
         Recipe(
             name: "Mediterranean Quinoa Salad",
-            imageName: "quinoa_salad",
+            imageName: "salad",
             servings: 4,
             likes: 84,
             minutes: 25,
@@ -184,7 +184,271 @@ class RecipeDataManager: ObservableObject {
             ],
             category: "Vegetarian",
             description: "A nourishing vegetarian bowl packed with roasted vegetables, protein-rich chickpeas, and whole grain quinoa, topped with a creamy tahini dressing."
+        ),
+        Recipe(
+            name: "Spaghetti Carbonara",
+            imageName: "carbonara",
+            servings: 4,
+            likes: 145,
+            minutes: 25,
+            ingredients: [
+                "12 oz spaghetti",
+                "4 oz pancetta, diced",
+                "2 large eggs",
+                "1/2 cup grated Parmesan cheese",
+                "2 cloves garlic, minced",
+                "Salt and black pepper to taste",
+                "Fresh parsley, chopped"
+            ],
+            instructions: [
+                "Cook spaghetti in salted water until al dente. Reserve 1/2 cup pasta water and drain.",
+                "Cook pancetta in a skillet until crispy. Add garlic and cook for 1 minute.",
+                "In a bowl, whisk eggs and Parmesan.",
+                "Quickly mix hot pasta with egg mixture, pancetta, and a splash of reserved pasta water.",
+                "Season with salt, pepper, and garnish with parsley."
+            ],
+            category: "Main Course",
+            description: "A creamy, cheesy Roman classic made with simple ingredients and bursting with flavor."
+        ),
+
+        Recipe(
+            name: "Caprese Stuffed Chicken",
+            imageName: "caprese_chicken",
+            servings: 4,
+            likes: 110,
+            minutes: 40,
+            ingredients: [
+                "4 boneless chicken breasts",
+                "1 cup mozzarella cheese, shredded",
+                "1/2 cup sun-dried tomatoes",
+                "Fresh basil leaves",
+                "Salt and pepper to taste",
+                "2 tablespoons olive oil",
+                "Balsamic glaze for drizzling"
+            ],
+            instructions: [
+                "Cut slits into chicken breasts without slicing all the way through.",
+                "Stuff with mozzarella, tomatoes, and basil.",
+                "Season with salt and pepper.",
+                "Sear in a skillet with olive oil until golden, then bake at 375°F for 20 minutes.",
+                "Drizzle with balsamic glaze before serving."
+            ],
+            category: "Main Course",
+            description: "Juicy chicken breasts stuffed with vibrant Caprese flavors and finished with a sweet balsamic glaze."
+        ),
+
+        Recipe(
+            name: "Garlic Butter Salmon",
+            imageName: "garlic_salmon",
+            servings: 2,
+            likes: 120,
+            minutes: 20,
+            ingredients: [
+                "2 salmon fillets",
+                "2 tablespoons butter",
+                "3 cloves garlic, minced",
+                "1 tablespoon lemon juice",
+                "1 teaspoon dried parsley",
+                "Salt and pepper to taste"
+            ],
+            instructions: [
+                "Melt butter in a skillet over medium heat.",
+                "Add garlic and cook for 1 minute.",
+                "Place salmon fillets skin-side down, cook for 4-5 minutes per side.",
+                "Add lemon juice and parsley, spoon butter over salmon while cooking.",
+                "Serve hot with vegetables or rice."
+            ],
+            category: "Seafood",
+            description: "Flaky salmon in a rich garlic butter sauce, perfect for a quick and satisfying dinner."
+        ),
+
+        Recipe(
+            name: "Classic Margherita Pizza",
+            imageName: "margherita_pizza",
+            servings: 2,
+            likes: 102,
+            minutes: 30,
+            ingredients: [
+                "1 pizza dough",
+                "1/2 cup tomato sauce",
+                "8 oz fresh mozzarella, sliced",
+                "Fresh basil leaves",
+                "1 tablespoon olive oil",
+                "Salt to taste"
+            ],
+            instructions: [
+                "Preheat oven to 475°F.",
+                "Roll out dough and place on a baking sheet.",
+                "Spread tomato sauce, top with mozzarella and basil.",
+                "Drizzle with olive oil and sprinkle salt.",
+                "Bake for 12-15 minutes until crust is golden and cheese bubbles."
+            ],
+            category: "Main Course",
+            description: "A simple, delicious pizza topped with fresh mozzarella, basil, and tomato sauce."
+        ),
+
+        Recipe(
+            name: "Thai Green Curry",
+            imageName: "green_curry",
+            servings: 4,
+            likes: 89,
+            minutes: 35,
+            ingredients: [
+                "1 tablespoon green curry paste",
+                "1 can coconut milk",
+                "2 chicken breasts, sliced",
+                "1 red bell pepper, sliced",
+                "1 zucchini, sliced",
+                "1/2 cup green beans",
+                "1 tablespoon fish sauce",
+                "1 teaspoon sugar",
+                "Fresh basil leaves",
+                "Jasmine rice for serving"
+            ],
+            instructions: [
+                "Heat curry paste in a saucepan until fragrant.",
+                "Add coconut milk and bring to a simmer.",
+                "Add chicken and vegetables, cook for 15 minutes.",
+                "Stir in fish sauce, sugar, and basil.",
+                "Serve with jasmine rice."
+            ],
+            category: "Main Course",
+            description: "A fragrant and creamy Thai curry loaded with tender chicken and fresh vegetables."
+        ),
+
+        Recipe(
+            name: "Avocado Toast with Poached Egg",
+            imageName: "avocado_toast",
+            servings: 2,
+            likes: 95,
+            minutes: 15,
+            ingredients: [
+                "2 slices sourdough bread",
+                "1 ripe avocado",
+                "2 eggs",
+                "1 tablespoon vinegar",
+                "Salt and pepper to taste",
+                "Red chili flakes (optional)"
+            ],
+            instructions: [
+                "Toast bread slices to your liking.",
+                "Mash avocado with salt and pepper.",
+                "Bring water to a simmer, add vinegar.",
+                "Crack eggs into water and poach for 3 minutes.",
+                "Spread avocado on toast, top with poached egg and chili flakes."
+            ],
+            category: "Breakfast",
+            description: "Creamy avocado on crusty toast topped with a perfectly poached egg—simple and satisfying."
+        ),
+
+        Recipe(
+            name: "Beef and Broccoli Stir-Fry",
+            imageName: "beef_broccoli",
+            servings: 4,
+            likes: 134,
+            minutes: 25,
+            ingredients: [
+                "1 lb flank steak, thinly sliced",
+                "2 cups broccoli florets",
+                "2 tablespoons soy sauce",
+                "1 tablespoon oyster sauce",
+                "1 teaspoon cornstarch",
+                "2 tablespoons vegetable oil",
+                "2 garlic cloves, minced"
+            ],
+            instructions: [
+                "Marinate beef with soy sauce, oyster sauce, and cornstarch.",
+                "Blanch broccoli in boiling water for 2 minutes.",
+                "Heat oil in wok, stir-fry beef until browned.",
+                "Add garlic and broccoli, stir-fry for another 3 minutes.",
+                "Serve with steamed rice."
+            ],
+            category: "Main Course",
+            description: "Tender beef and crisp broccoli in a savory stir-fry sauce, better than takeout!"
+        ),
+
+        Recipe(
+            name: "Chocolate Lava Cake",
+            imageName: "lava_cake",
+            servings: 4,
+            likes: 150,
+            minutes: 30,
+            ingredients: [
+                "1/2 cup butter",
+                "4 oz dark chocolate",
+                "2 eggs",
+                "2 egg yolks",
+                "1/4 cup sugar",
+                "1/4 cup flour",
+                "Butter for greasing ramekins",
+                "Powdered sugar for dusting"
+            ],
+            instructions: [
+                "Preheat oven to 425°F. Grease and flour ramekins.",
+                "Melt butter and chocolate together.",
+                "Whisk eggs, yolks, and sugar until thick.",
+                "Combine with chocolate mixture, fold in flour.",
+                "Pour into ramekins and bake 12 minutes.",
+                "Let cool slightly, invert onto plates and dust with powdered sugar."
+            ],
+            category: "Dessert",
+            description: "Rich, gooey chocolate cakes with a molten center—perfect for indulgent nights."
+        ),
+
+        Recipe(
+            name: "Greek Tzatziki Dip",
+            imageName: "tzatziki",
+            servings: 6,
+            likes: 70,
+            minutes: 10,
+            ingredients: [
+                "1 cup Greek yogurt",
+                "1/2 cucumber, grated and drained",
+                "2 cloves garlic, minced",
+                "1 tablespoon lemon juice",
+                "1 tablespoon olive oil",
+                "1 tablespoon fresh dill, chopped",
+                "Salt and pepper to taste"
+            ],
+            instructions: [
+                "Combine all ingredients in a bowl.",
+                "Mix until smooth and well combined.",
+                "Chill before serving with pita or veggies."
+            ],
+            category: "Appetizer",
+            description: "A cool and creamy Greek dip that pairs perfectly with grilled meats or as a snack."
+        ),
+
+        Recipe(
+            name: "Pumpkin Spice Muffins",
+            imageName: "pumpkin_muffins",
+            servings: 12,
+            likes: 115,
+            minutes: 35,
+            ingredients: [
+                "1 3/4 cups flour",
+                "1 cup pumpkin puree",
+                "2/3 cup sugar",
+                "1/2 cup vegetable oil",
+                "2 eggs",
+                "1 teaspoon baking soda",
+                "1/2 teaspoon baking powder",
+                "1 teaspoon cinnamon",
+                "1/2 teaspoon nutmeg",
+                "1/2 teaspoon salt"
+            ],
+            instructions: [
+                "Preheat oven to 375°F. Line muffin tin with liners.",
+                "Mix dry ingredients in a bowl.",
+                "In another bowl, whisk pumpkin, oil, sugar, and eggs.",
+                "Combine wet and dry mixtures until just blended.",
+                "Fill muffin cups 3/4 full and bake for 20-22 minutes.",
+                "Cool on a wire rack."
+            ],
+            category: "Dessert",
+            description: "Soft and moist muffins filled with cozy fall flavors of pumpkin and warm spices."
         )
+
     ]
     
     @Published var favorites: [Recipe] = []
