@@ -129,3 +129,68 @@ struct ProfileView_Previews: PreviewProvider {
         ProfileView(userId: 1)
     }
 }
+
+
+struct WrapView<Content: View>: View {
+    var items: [String]
+    var content: (String) -> Content
+    
+    @State private var totalHeight = CGFloat.zero
+    
+    var body: some View {
+        VStack {
+            GeometryReader { geo in
+                self.generateContent(in: geo)
+            }
+        }
+        .frame(height: totalHeight)
+    }
+    
+    private func generateContent(in g: GeometryProxy) -> some View {
+        var width = CGFloat.zero
+        var height = CGFloat.zero
+        
+        return ZStack(alignment: .topLeading) {
+            ForEach(items, id: \.self) { item in
+                content(item)
+                    .padding(4)
+                    .alignmentGuide(.leading, computeValue: { d in
+                        if abs(width - d.width) > g.size.width {
+                            width = 0
+                            height -= d.height
+                        }
+                        let result = width
+                        if item == items.last {
+                            width = 0 // reset
+                        } else {
+                            width -= d.width
+                        }
+                        return result
+                    })
+                    .alignmentGuide(.top, computeValue: { _ in
+                        let result = height
+                        if item == items.last {
+                            height = 0 // reset
+                        }
+                        return result
+                    })
+            }
+        }
+        .background(viewHeightReader($totalHeight))
+    }
+    
+    private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
+        GeometryReader { geo in
+            Color.clear
+                .preference(key: ViewHeightKey.self, value: geo.size.height)
+        }
+        .onPreferenceChange(ViewHeightKey.self) { binding.wrappedValue = $0 }
+    }
+}
+
+struct ViewHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
+    }
+}
