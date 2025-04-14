@@ -447,6 +447,62 @@ class RecipeDataManager: ObservableObject {
             ],
             category: "Dessert",
             description: "Soft and moist muffins filled with cozy fall flavors of pumpkin and warm spices."
+        ),
+
+        Recipe(
+            name: "Vegan Black Bean Soup",
+            imageName: "black_bean_soup",
+            servings: 3,
+            likes: 46,
+            minutes: 30,
+            ingredients: [
+                "2 cans Black Beans",
+                "2 Tomatoes",
+                "1 Onion",
+                "2 Carrots",
+                "2 eggs",
+                "1 tsp Chili Powder",
+                "1 tsp Ground Cumin",
+                "1 teaspoon cinnamon",
+                "1/2 Red Onion",
+                "1/2 teaspoon salt"
+            ],
+            instructions: [
+                "Heat the oil in a large stockpot over medium-high heat.",
+                "Add the onion, carrot, bell pepper and sauté for 6 minutes.",
+                "Add in the garlic, cumin, chili powder and chipotle powder and sauté.",
+                "Add the vegetable broth and black beans and stir to combine."
+            ],
+            category: "Main Course",
+            description: "This quick black bean soup recipe is full of flavor and protein and comes together in less than 30 minutes!"
+        ),
+
+        Recipe(
+            name: "Dairy Free Chicken Pot Pie",
+            imageName: "chicken_pot_pie",
+            servings: 4,
+            likes: 110,
+            minutes: 55,
+            ingredients: [
+                "1 cup Dairy Free Milk",
+                "1 Onion",
+                "2 Carrots",
+                "1 Sweet Potato",
+				"1 cup Gluten-Free All-Purpose Flour",
+                "2 cups Chicken Stock",
+                "2 tbsp Margarine",
+                "2 cups Frozen Mixed Vegetables",
+                "1/2 tsp Pepper",
+                "1 teaspoon salt"
+            ],
+            instructions: [
+                "Stir in the broth and dairy free milk.",
+                "Add fried chicken breast with stirred vegetables.",
+                "Cook and stir until the mixture is thickened.",
+                "Serve topped with a pie crust round from gluten-free flour."
+            ],
+            category: "Main Course",
+            description: "A hearty, creamy chicken stew is topped with pie crust rounds to create single servings of gluten and dairy free chicken pot pie."
         )
 
     ]
